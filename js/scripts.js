@@ -29,6 +29,20 @@ Pizza.prototype.completePizza = function() {
 	return this.toppingsPizza + " " + this.sizePizza;
 }
 
+function sizesPizzaCost() {
+	for (var i = 0; i < sizePizza.length; i++)	{
+		if (sizePizza[i].sizes === "small") {
+			charge +=7
+		} else if (sizePizza[i].sizes === "medium") {
+			charge +=10
+		} else if (sizePizza[i].sizes === "large") {
+			charge +=13
+		} else (sizePizza[i].sizes === "extraLarge") {
+			charge +=16
+		}
+	}
+}
+
 // List of Toppings
 var olives = {name: "Olives", price: 1.00};
 var spinach = {name: "Spinach", price: 1.00};
@@ -68,9 +82,9 @@ pizzas.forEach(function(pizza) {
 
 // User Interface
 
-// $(document).ready(function()	{
-// 	$().submit(function(event) {
-// 		event.PreventDefault();
-// 		var = ().val();
-// 	});
-// });
+$(document).ready(function()	{
+	$("form#pizzaOrder").submit(function(event) {
+		event.PreventDefault();
+		var = ().val();
+	});
+});
