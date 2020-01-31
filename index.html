@@ -11,53 +11,57 @@
 		<div class="container">
 			<h2>Pizza Parlor</h2>
 			<div class = "row">
-				<div class ="col-md-6">
-					<h3>Select your toppings:</h2>
-					<div>
-						<input type = "checkbox" id = "olives" name = "Olives">
-						<label for = "olives">Olives</label>
+				<form id = "pizzaOrder">
+					<div class ="col-md-6">
+						<h3>Select your toppings:</h2>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "olives" name = "toppingsPizza" value = "Olives">
+							<label for = "olives">Olives</label>
+						</div>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "spinach" name = "toppingsPizza" value = "Spinach">
+							<label for = "spinach">Spinach</label>
+						</div>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "greenPepper" name = "toppingsPizza" value = "GreenPepper">
+							<label for = "greenPepper">Green Pepper</label>
+						</div>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "pepperoni" name = "toppingsPizza" value = "Pepperoni">
+							<label for = "pepperoni">Pepperoni</label>
+						</div>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "mushrooms" name = "toppingsPizza" value = "Mushrooms">
+							<label for = "mushrooms">Mushrooms</label>
+						</div>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "onions" name = "toppingsPizza" value = "Onions">
+							<label for = "onions">Onions</label>
+						</div>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "pineapple" name = "toppingsPizza" value = "Pineapple">
+							<label for = "pineapple">Pineapple</label>
+						</div>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "sausage" name = "toppingsPizza" value = "Sausage">
+							<label for = "sausage">Sausage</label>
+						</div>
+						<div class = "form-group"> 
+							<input type = "checkbox" id = "jalapeno" name = "toppingsPizza" value = "Jalapeno">
+							<label for = "jalapeno">Jalapeno</label>
+						</div>
+						<h3>Select pizza size:</h3>
+						<div class = "form-group"> 
+							<select class="form-control" id="size">
+								<option name="sizePizza" value="small">Small</option>
+								<option name="sizePizza" value="medium">Medium</option>
+								<option name="sizePizza" value="large">Large</option>
+								<option name="sizePizza" value="extraLarge">Extra Large</option>
+							</select>
+						</div>
+						<button id="add-button" type="submit" class="btn btn-warning">Add</button>
 					</div>
-					<div>
-						<input type = "checkbox" id = "spinach" name = "Spinach">
-						<label for = "spinach">Spinach</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "greenPepper" name = "GreenPepper">
-						<label for = "greenPepper">Green Pepper</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "pepperoni" name = "Pepperoni">
-						<label for = "pepperoni">Pepperoni</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "mushrooms" name = "Mushrooms">
-						<label for = "mushrooms">Mushrooms</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "onions" name = "Onions">
-						<label for = "onions">Onions</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "pineapple" name = "Pineapple">
-						<label for = "pineapple">Pineapple</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "sausage" name = "Sausage">
-						<label for = "sausage">Sausage</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "jalapeno" name = "Jalapeno">
-						<label for = "jalapeno">Jalapeno</label>
-					</div>
-					<h3>Select pizza size:</h3>
-					<select class="form-control" id="size">
-						<option value="small">Small</option>
-						<option value="medium">Medium</option>
-						<option value="large">Large</option>
-						<option value="extraLarge">Extra Large</option>
-					</select>
-					<button id="add-button" type="submit" class="btn btn-warning">Add</button>
-				</div>
+				</form>
 				<div class ="col-md-6">
 					<h3>Total Cost:</h2>
 					<div id = "total cost"></div>

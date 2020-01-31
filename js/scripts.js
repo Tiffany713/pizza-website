@@ -1,6 +1,28 @@
-function Pizza() {
-	this.toppingsPizza = toppingsPizza;
-	this.sizePizza = sizePizza;
+// Business Logic for Pizza
+
+// function Pizza() {
+// 	this.toppingsPizza = [];
+// 	this.sizePizza = sizePizza;
+// }
+
+function toppingsPizza() {
+	this.olives = olives;
+	this.spinach = spinach;
+	this.greenPepper = greenPepper;
+	this.pepperoni = pepperoni
+	this.mushrooms = mushrooms
+	this.onions = onions
+	this.pineapple = pineapple
+	this.sausage = sausage
+	this.extraCheese = extraCheese;
+	this.jalapeno = jalapeno
+}
+
+function sizesPizza() {
+	this.small = small;
+	this.medium = medium;
+	this.large = large;
+	this.extraLarge = extraLarge;
 }
 
 Pizza.prototype.completePizza = function() {
@@ -43,3 +65,12 @@ pizzas.forEach(function(pizza) {
 		console.log(size.name);
 	});
 });
+
+// User Interface
+
+// $(document).ready(function()	{
+// 	$().submit(function(event) {
+// 		event.PreventDefault();
+// 		var = ().val();
+// 	});
+// });
