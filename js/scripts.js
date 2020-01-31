@@ -37,3 +37,9 @@ pizzas.forEach(function(pizza) {
 		console.log(topping.name);
 	});
 });
+
+pizzas.forEach(function(pizza) {
+  pizza.sizes.forEach(function(size) {
+		console.log(size.name);
+	});
+});

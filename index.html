@@ -50,22 +50,12 @@
 						<label for = "jalapeno">Jalapeno</label>
 					</div>
 					<h3>Select pizza size:</h3>
-					<div>
-						<input type = "checkbox" id = "small" name = "Small">
-						<label for = "small">Small</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "medium" name = "Medium">
-						<label for = "medium">Medium</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "large" name = "large">
-						<label for = "large">Large</label>
-					</div>
-					<div>
-						<input type = "checkbox" id = "extraLarge" name = "Extra Large">
-						<label for = "extraLarge">Extra Large</label>
-					</div>
+					<select class="form-control" id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						<option value="extraLarge">Extra Large</option>
+					</select>
 					<button id="add-button" type="submit" class="btn btn-warning">Add</button>
 				</div>
 				<div class ="col-md-6">
