@@ -1,21 +1,21 @@
 function Toppings()
 
 // List of Toppings
-var olives = {name: "Olives"};
-var spinach = {name: "Spinach"};
-var greenPepper = {name: "Green Pepper Bell"};
-var pepperoni = {name: "Pepperoni"};
-var mushrooms = {name: "Mushrooms"};
-var onions = {name: "Onions"};
-var pineapple = {name: "Pinapple"};
+var olives = {name: "Olives", price: 1.00};
+var spinach = {name: "Spinach", price: 1.00};
+var greenPepper = {name: "Green Pepper Bell", price: 1.00};
+var pepperoni = {name: "Pepperoni", price: 1.00};
+var mushrooms = {name: "Mushrooms", price: 1.00};
+var onions = {name: "Onions", price: 1.00};
+var pineapple = {name: "Pinapple", price: 1.00};
 var sausage = {name: "Sausage"};
-var extraCheese = {name: "Extra Cheese"};
-var jalapeno = {name: "Jalapeno"};
+var extraCheese = {name: "Extra Cheese", price: 1.00};
+var jalapeno = {name: "Jalapeno", price: 1.00};
 
 // List of Sizes
 var small = {name: "Small"};
-var medium = {name: "Medium"};
-var large = {name: "Large"};
+var medium = {name: "Medium", price: 2.00};
+var large = {name: "Large" price: 3.00};
 var extraLarge = {name: "Extra Large"};
 
 var toppingsPizza = {name: "Toppings", toppings: [olives, spinach, greenPepper, pepperoni, mushrooms, onions, pineapple, sausage, extraCheese, jalapeno]};
