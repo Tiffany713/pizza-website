@@ -51,12 +51,14 @@ var toppingsPizza = {name: "Toppings", toppings: [olives, spinach, greenPepper, 
 var sizePizza = {name: "Sizes", sizes: [small, medium, large, extraLarge]};
 
 var pizzas = [toppingsPizza, sizePizza];
+this.toppingsPizza = toppingsPizza;
+this.sizePizza = sizePizza;
 
 
 Pizza.prototype.completePizza = function() {
+	var cost = 0;
 	this.cost = cost;
 
-	var cost = 0;
 
 	if (this.sizePizza[i].sizes === "small") {
 		cost +=7;
@@ -66,12 +68,10 @@ Pizza.prototype.completePizza = function() {
 		cost +=13;
 	} else (this.sizePizza[i].sizes === "extraLarge") {
 		cost +=16;
-	
 	}
 	this.toppingsPizza.forEach(function() {
 		cost += 1;
-
-	}
+	});
 } 
 
 console.log(completePizza);
@@ -83,6 +83,6 @@ console.log(toppingsPizza);
 $(document).ready(function()	{
 	$("form#pizzaOrder").submit(function(event) {
 		event.PreventDefault();
-		var = ().val();
+		
 	});
 });
