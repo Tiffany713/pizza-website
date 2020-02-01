@@ -1,9 +1,9 @@
-// Business Logic for Pizza
+//Business Logic for Pizza
 
-// function Pizza() {
-// 	this.toppingsPizza = [];
-// 	this.sizePizza = sizePizza;
-// }
+function Pizza() {
+	this.toppingsPizza = [];
+	this.sizePizza = sizePizza;
+}
 
 function toppingsPizza() {
 	this.olives = olives;
@@ -25,25 +25,9 @@ function sizesPizza() {
 	this.extraLarge = extraLarge;
 }
 
-Pizza.prototype.completePizza = function() {
-	return this.toppingsPizza + " " + this.sizePizza;
-}
-
-function sizesPizzaCost() {
-	for (var i = 0; i < sizePizza.length; i++)	{
-		if (sizePizza[i].sizes === "small") {
-			charge +=7
-		} else if (sizePizza[i].sizes === "medium") {
-			charge +=10
-		} else if (sizePizza[i].sizes === "large") {
-			charge +=13
-		} else (sizePizza[i].sizes === "extraLarge") {
-			charge +=16
-		}
-	}
-}
 
 // List of Toppings
+
 var olives = {name: "Olives", price: 1.00};
 var spinach = {name: "Spinach", price: 1.00};
 var greenPepper = {name: "Green Pepper Bell", price: 1.00};
@@ -68,17 +52,31 @@ var sizePizza = {name: "Sizes", sizes: [small, medium, large, extraLarge]};
 
 var pizzas = [toppingsPizza, sizePizza];
 
-pizzas.forEach(function(pizza) {
-  pizza.toppings.forEach(function(topping) {
-		console.log(topping.name);
-	});
-});
 
-pizzas.forEach(function(pizza) {
-  pizza.sizes.forEach(function(size) {
-		console.log(size.name);
-	});
-});
+Pizza.prototype.completePizza = function() {
+	this.cost = cost;
+
+	var cost = 0;
+
+	if (this.sizePizza[i].sizes === "small") {
+		cost +=7;
+	} else if (this.sizePizza[i].sizes === "medium") {
+		cost +=10;
+	} else if (this.sizePizza[i].sizes === "large") {
+		cost +=13;
+	} else (this.sizePizza[i].sizes === "extraLarge") {
+		cost +=16;
+	
+	}
+	this.toppingsPizza.forEach(function() {
+		cost += 1;
+
+	}
+} 
+
+console.log(completePizza);
+console.log(sizePizza);
+console.log(toppingsPizza);
 
 // User Interface
 
