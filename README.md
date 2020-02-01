@@ -14,17 +14,17 @@ This application allows the user to choose one or more toppings to their pizza a
 
 ## Specs
 
-* Spec: When the user click on one topping, the price attached to that topping is added to the total.
-    * Input: "Olives"
-    * Output: "$1.25"
+* Spec: When the user click on one topping, $1 is added to the total as each topping costs $1.
+    * Input: Add: "Olives"
+    * Output: "+ $1"
 
-* Spec: The small pizza size is the base price for size as well as the default size. If the user does not choose other sizes such as medium and large, the price does not change.
-    * Input: "Small: $7"
-    * Output: "Small: $7"
-
-* Spec: When the user click on medium or large, the price attached to the corresponding size is added to the total.
+* Spec: When the user click on small, medium or large, the price attached to the corresponding size is added to the total.
     * Input: Clicks on Large
-    * Output: "Small price: $7, Large: + $3"
+    * Output: "Large: $13"
+
+* Spec: The total cost of the pizza will be based on the size of the pizza and the amount of toppings.
+    * Input: User chooses: "Size: Large, Toppings: Olives and Pineapple"
+    * Output: "Large: $13 , Olive: +$1, Pineapple: +$1 = $15 total"
 
 ## Support and contact details
 If you have any questions or concerns, message me on GitHub. If you know how to fix the known bug, please go ahead and make a contribution to the code.
